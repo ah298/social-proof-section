@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Primary Color
+$darkMagenta:hsl(300, 43%, 22%);
+$softPink:hsl(333, 80%, 67%);
+
+//Neutral Color
+$darkgrayMagenta: hsl(303, 10%, 53%);
+$lightgrayMagenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+//Font Size
+$medium: 15px;
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: $medium;
+    line-height: 1.4;
+    
+}
+
+section{
+    font-size: 12px;
+}
+
+.dfmargin{
+    margin: 15px 30px;
+}
+
+.smmargin{
+    margin: 10px;
+}

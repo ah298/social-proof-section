@@ -1,0 +1,163 @@
+@media (min-width: 376px){
+    
+    body{
+        background: url("../images/bg-pattern-top-desktop.svg") no-repeat top left,
+                    url("../images/bg-pattern-bottom-desktop.svg")  no-repeat bottom right;
+        
+
+    }
+}
+
+@media (min-width: 600px){
+
+
+    #headline{
+            
+        h1{
+            margin: 50px auto 20px auto;
+        }
+
+        .pgraph{
+            margin: 10px auto;
+            width: 60%;
+        }
+    }
+
+    .starred{
+        display: flex;
+        justify-content: center;
+
+        &_review{
+            flex-basis: 25%;
+        }
+
+    }
+
+    .buyer{
+        display:flex;
+        flex-direction: column;
+    
+
+        &_container{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media (min-width: 750px){
+    
+    .hide-for-desktop{
+        display: none;
+    }
+
+    body{
+        margin: auto;
+        height: 100vh;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        overflow: hidden;
+        max-width: 1000px;
+    }
+    .desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+    }
+
+    #headline{
+        margin: 15px 30px;
+        //border: 1px solid rgb(126, 54, 54);
+        flex: 2;
+
+        h1{
+            //border: 1px solid rgb(126, 54, 54);
+            margin: 0;
+            padding: 0;
+            font-size: 35px;
+            text-align: left;
+        }
+
+        .pgraph{
+            //border: 1px solid rgb(126, 54, 54);
+            width: 100%;
+            p{
+                text-align: left;
+            }
+        
+        }
+    }
+
+    .starred{
+        //border: 1px solid rgb(126, 54, 54);
+        display: block;
+        flex: 3;
+        height: 190px;
+        position: relative;
+        align-items: flex-end;
+        
+
+        &_review{
+            padding: 15px 15px 15px 140px;
+            width: 360px;
+            text-align: start;
+
+            &::after{
+                top:50%;
+                left: 20px;
+                transform: translateY(-50%);
+            }
+
+        }
+    }
+
+    #review1{
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+    }
+
+    #review2{
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-52.5%);
+    }
+
+    #review3{
+        position: absolute;
+        left: 5%;
+        top: 0;
+    }
+
+    .buyer{
+        position: relative;
+        min-height: 250px;
+
+        .buyer_container{
+            width:32%
+        }
+    }
+
+    #buyer1{
+        position: absolute;
+        top: -10px;
+        left: 0;
+    }
+
+    #buyer2{
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #buyer3{
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+    }
+}

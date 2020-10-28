@@ -1,0 +1,92 @@
+body{
+    background: url("../images/bg-pattern-top-mobile.svg") no-repeat top left,
+                url("../images/bg-pattern-bottom-mobile.svg")  no-repeat bottom right;
+
+}
+
+#headline{
+    h1{
+        margin: 35px 35px 0 35px;
+        padding: 5px 33px;
+        color: $darkMagenta;
+        text-align: center;
+    }
+
+    p{
+        color: $darkgrayMagenta;
+        font-weight: 500;
+        text-align: center;
+    }
+
+}
+
+.starred_review{
+
+    background: $lightgrayMagenta;
+    border-radius: 5px;
+    color: $darkMagenta;
+    font-weight: 700;
+    padding : 40px 35px 15px 35px;
+    position: relative;
+    text-align: center;
+   
+    &::after{
+        content:" ";
+        background: url("../images/icon-star.svg"),
+                    url("../images/icon-star.svg"),
+                    url("../images/icon-star.svg"),
+                    url("../images/icon-star.svg"),
+                    url("../images/icon-star.svg");
+
+        background-position: 0px,20px,40px,60px,80px;
+        background-repeat: no-repeat;
+        display: block;
+        height: 16px;
+        width: 100px;
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.buyer{
+
+    &_container{
+        background: $darkMagenta;
+        border-radius: 5px;
+        padding: 30px;
+    }
+
+    .details{     
+        align-items: center;   
+        display: flex;
+        flex-direction: row;
+ 
+    }
+
+    img{
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    h3{
+        color: $white;
+        font-weight: 500;
+        
+    }
+
+    .verified{
+        color: $softPink;
+        font-weight: 400;
+    }
+
+    .comment{
+        color: $white;
+        padding-top: 25px;
+    }
+}
+
+.attribution{
+    text-align: center;
+}
